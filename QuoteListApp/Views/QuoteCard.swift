@@ -9,26 +9,35 @@ import SwiftUI
 
 struct Card: View {
     
-    var quote:[Quote]?
+    var quote:Quote
         
     var body: some View {
         
         ZStack{
-            Image("calm")
+            Image(quote.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 400, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 400, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .clipped()
                 .cornerRadius(20)
             
             
-            VStack{
-                Text("test")
+            VStack(alignment: .leading){
+                Text(quote.quote)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
-                    .frame(width: 350, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 350, height: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .clipped()
+                    .shadow(radius: 10)
+                HStack{
+                    Text("- " + quote.name)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    
+                }
             }
         }
     }
@@ -36,6 +45,6 @@ struct Card: View {
 
 struct Card_Previews: PreviewProvider {
     static var previews: some View {
-        Card()
+        QuoteListView()
     }
 }

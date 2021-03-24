@@ -12,10 +12,14 @@ struct QuoteListView: View {
     @ObservedObject var model = QuoteModel()
     
     var body: some View {
-        ScrollView{
-            ForEach(model.quote){ q in
-                Text("JJ")
-            }
+        NavigationView{
+            ScrollView{
+                ForEach(model.quote){ q in
+                    Card(quote: q)
+                        .padding(.bottom)
+                    
+                }
+            }.navigationBarTitle("Quotes")
         }
     }
 }
