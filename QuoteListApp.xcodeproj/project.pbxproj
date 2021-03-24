@@ -16,6 +16,7 @@
 		1327B3E5260B87BA00BA17E4 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B3E4260B87BA00BA17E4 /* Quote.swift */; };
 		1327B3E8260B87D200BA17E4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327B3E7260B87D200BA17E4 /* DataService.swift */; };
 		1327B3EB260B87F900BA17E4 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1327B3EA260B87F900BA17E4 /* quotes.json */; };
+		13D5077D260B9C2D00076AF0 /* DetailQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5077C260B9C2D00076AF0 /* DetailQuoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1327B3E4260B87BA00BA17E4 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		1327B3E7260B87D200BA17E4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1327B3EA260B87F900BA17E4 /* quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		13D5077C260B9C2D00076AF0 /* DetailQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailQuoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				1327B3C8260B85C100BA17E4 /* QuoteListView.swift */,
 				1327B3D8260B860300BA17E4 /* QuoteCard.swift */,
+				13D5077C260B9C2D00076AF0 /* DetailQuoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				1327B3C7260B85C100BA17E4 /* QuoteListApp.swift in Sources */,
 				1327B3E2260B879E00BA17E4 /* QuoteModel.swift in Sources */,
 				1327B3E8260B87D200BA17E4 /* DataService.swift in Sources */,
+				13D5077D260B9C2D00076AF0 /* DetailQuoteView.swift in Sources */,
 				1327B3E5260B87BA00BA17E4 /* Quote.swift in Sources */,
 				1327B3D9260B860300BA17E4 /* QuoteCard.swift in Sources */,
 			);

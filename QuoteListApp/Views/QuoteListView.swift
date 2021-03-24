@@ -15,9 +15,12 @@ struct QuoteListView: View {
         NavigationView{
             ScrollView{
                 ForEach(model.quote){ q in
-                    Card(quote: q)
-                        .padding(.bottom)
-                    
+                    NavigationLink(
+                        destination: DetailQuoteView(quote: q),
+                        label: {
+                            Card(quote: q).padding(.bottom)
+                        }
+                    )
                 }
             }.navigationBarTitle("Quotes")
         }
